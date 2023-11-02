@@ -1,18 +1,43 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "nuxt": "^3.8.0",
-    "vue": "^3.3.7",
-    "vue-router": "^4.2.5"
-  }
+	"name": "portfolio",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prepare": "husky install",
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"lint:fix": "prettier --write --list-different . && bun lint --fix",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "1.0.0",
+		"@nuxt/image": "1.0.0",
+		"@nuxtjs/eslint-config-typescript": "12.1.0",
+		"@nuxtjs/i18n": "8.0.0-rc.4",
+		"@nuxtjs/tailwindcss": "6.9.0",
+		"@vueuse/core": "10.5.0",
+		"@vueuse/nuxt": "10.5.0",
+		"bun-types": "1.0.7",
+		"eslint": "8.52.0",
+		"eslint-config-prettier": "9.0.0",
+		"eslint-plugin-prettier": "5.0.1",
+		"happy-dom": "12.10.3",
+		"husky": "8.0.3",
+		"nuxt": "3.8.0",
+		"nuxt-icon": "0.6.1",
+		"nuxt-vitest": "0.11.0",
+		"vitest": "0.34.6",
+		"vue": "3.3.7",
+		"vue-router": "4.2.5",
+		"nuxt-typed-router": "3.3.2",
+		"@nuxtjs/html-validator": "1.5.2"
+	},
+	"dependencies": {
+		"@pinia/nuxt": "0.5.1",
+		"pinia": "2.1.7"
+	}
 }
