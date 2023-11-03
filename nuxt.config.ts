@@ -18,6 +18,9 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
+	nitro: {
+		preset: 'bun',
+	},
 	imports: {
 		dirs: ['store', 'composables/**'],
 	},
