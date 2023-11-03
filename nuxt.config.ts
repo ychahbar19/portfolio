@@ -18,7 +18,6 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
-	buildDir: 'dist',
 	imports: {
 		dirs: ['store', 'composables/**'],
 	},
