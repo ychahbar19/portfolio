@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 		},
 	],
 	nitro: {
-		preset: 'vercel-edge',
+		preset: 'bun',
 	},
 	imports: {
 		dirs: ['store', 'composables/**'],
