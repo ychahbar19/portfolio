@@ -11,7 +11,21 @@ export default defineNuxtConfig({
 		'nuxt-vitest',
 		'@nuxtjs/html-validator',
 		'nuxt-typed-router',
+		[
+			'@nuxtjs/google-fonts',
+			{
+				families: {
+					Manrope: true,
+					'Manrope-Bold': true,
+					'Manrope-SemiBold': true,
+					'Manrope-Medium': true,
+					'Manrope-Light': true,
+					'Manrope-ExtraLight': true,
+				},
+			},
+		],
 	],
+	css: ['@/assets/css/main.css'],
 	components: [
 		{
 			path: '@/components',

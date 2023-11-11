@@ -1,0 +1,11 @@
+html, body {
+	@apply h-screen bg-auto bg-primary-950 overflow-hidden
+}
+
+* {
+	@apply box-border;
+}
+
+#__nuxt {
+	@apply flex flex-col  h-screen;
+}
