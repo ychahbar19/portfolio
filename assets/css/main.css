@@ -1,3 +1,9 @@
+:root {
+	--grid-line-padding: max(1.75em, 1.75vw);
+	--loader-section-width: calc((100vw - (var(--grid-line-padding) * 2)) / 4);
+	--loader-section-height: calc(100% + (0.35em * 2));
+}
+
 html, body {
 	@apply h-screen bg-auto bg-primary-950 overflow-hidden
 }
@@ -6,6 +12,26 @@ html, body {
 	@apply box-border;
 }
 
-#__nuxt {
+#__nuxt, #nuxt-test, .main {
 	@apply flex flex-col  h-screen;
 }
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/static/Manrope-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Monument';
+	src: url('../fonts/Monument/MonumentExtended-Regular.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Monument-UltraBold';
+	src: url('../fonts/Monument/MonumentExtended-Ultrabold.otf') format('truetype');
+}
+
+body {
+	position: relative;
+	font-family: 'Monument-UltraBold', Fallback, sans-serif;
+	}
