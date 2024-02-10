@@ -1,6 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	ssr: true,
+	vite: {
+		define: {
+			'process.env.debug': false,
+		},
+		optimizeDeps: {
+			exclude: ['fsevents'],
+		},
+	},
 	modules: [
 		'@vueuse/nuxt',
 		'@pinia/nuxt',
@@ -12,6 +20,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/html-validator',
 		'nuxt-typed-router',
 	],
+	css: ['@/assets/css/main.css'],
 	components: [
 		{
 			path: '@/components',
@@ -33,18 +42,9 @@ export default defineNuxtConfig({
 		configPath: 'tailwind.config',
 	},
 	image: {
+		format: ['webp'],
+		quality: 80,
 		dir: 'assets',
-		formats: ['webp'],
-	},
-	app: {
-		pageTransition: {
-			name: 'page',
-			mode: 'out-in',
-		},
-		layoutTransition: {
-			name: 'layout',
-			mode: 'out-in',
-		},
 	},
 	i18n: {
 		compilation: {
