@@ -27,9 +27,9 @@ export default defineNuxtConfig({
 			pathPrefix: false,
 		},
 	],
-	nitro: {
-		preset: 'vercel-edge',
-	},
+	// nitro: {
+	// 	preset: 'vercel-edge',
+	// },
 	imports: {
 		dirs: ['store', 'composables/**'],
 	},
