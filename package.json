@@ -2,7 +2,7 @@
 	"name": "portfolio",
 	"private": true,
 	"type": "module",
-	"packageManager": "bun@1.0.7",
+	"packageManager": "bun@1.0.26",
 	"scripts": {
 		"prepare": "husky install",
 		"build": "nuxt build",
@@ -27,8 +27,6 @@
 		"vitest": "0.34.6"
 	},
 	"dependencies": {
-		"sharp": "0.33.2",
-		"ipx": "3.0.0",
 		"@pinia/nuxt": "0.5.1",
 		"pinia": "2.1.7",
 		"@nuxt/image": "1.0.0",
