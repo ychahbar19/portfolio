@@ -27,6 +27,8 @@
 		"vitest": "0.34.6"
 	},
 	"dependencies": {
+		"sharp": "0.33.2",
+		"ipx": "3.0.0",
 		"@pinia/nuxt": "0.5.1",
 		"pinia": "2.1.7",
 		"@nuxt/image": "1.0.0",
@@ -39,6 +41,9 @@
 		"vue": "3.3.7",
 		"vue-router": "4.2.5",
 		"nuxt-typed-router": "3.3.2",
-		"@nuxtjs/html-validator": "1.5.2"
+		"@nuxtjs/html-validator": "1.5.2",
+		"node-sass": "9.0.0",
+		"sass": "1.69.5",
+		"sass-loader": "13.3.2"
 	}
 }
