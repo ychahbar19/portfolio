@@ -24,7 +24,7 @@
 					</div>
 					<Transition name="fade">
 						<div v-if="showAvatar" class="w-10 h-10 rounded-full overflow-hidden col-span-5">
-							<NuxtPicture src="/images/profile.jpg" />
+							<NuxtImg src="/img/profile.jpg" />
 						</div>
 					</Transition>
 				</div>
